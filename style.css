@@ -186,19 +186,55 @@ section {
   text-align: center;
   margin: 20px auto;
 }
-
-.contact a:hover {
-  text-decoration: underline;
-}
-
 @media (max-width: 768px) {
   nav a {
-    margin: 0 0.5rem;
+    margin: 0.5rem;
     display: inline-block;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text {
+    z-index: 2;
+    max-width: 100%;
+  }
+
+  .circle-bg {
+    position: static;
+    width: 200px;
+    height: 200px;
+    margin-top: 1.5rem;
+    background: rgba(160, 220, 255, 0.3);
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: 3;
   }
 
   .project-grid {
     flex-direction: column;
     align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .resume a {
+    font-size: 1rem;
+  }
+
+  .contact p,
+  .achievements li {
+    font-size: 1rem;
   }
 }
